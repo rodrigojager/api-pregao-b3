@@ -1,0 +1,221 @@
+/api/GetPregaoB3Data:
+  get:
+    - lang: python
+      label: Python
+      source: |
+        import requests,os,urllib3;
+        urllib3.disable_warnings();
+        print(requests.get("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3Data",verify=False).text)
+
+    - lang: csharp
+      label: C#
+      source: |
+        using System.Net.Http;
+        using System.Threading.Tasks;
+        using System;
+        class Program{
+            static async Task Main(){
+                var c=new HttpClient();
+                var s=await c.GetStringAsync("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3Data");
+                Console.WriteLine(s);
+            }
+        }
+
+    - lang: javascript
+      label: Node.js
+      source: |
+        import('node-fetch')
+        .then(({default:fetch})=>fetch('http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3Data')
+        .then(r=>r.text())
+        .then(console.log));
+
+    - lang: go
+      label: Go
+      source: |
+        package main
+        import("fmt";"io";"net/http")
+        func main(){
+            resp,_:=http.Get("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3Data");
+            defer resp.Body.Close();
+            b,_:=io.ReadAll(resp.Body);
+            fmt.Println(string(b))
+        }
+        
+    - lang: java
+      label: Java
+      source: |
+        import java.net.http.*;
+        import java.net.URI;
+        public class Main{
+            public static void main(String[]a)throws Exception{
+                var c=HttpClient.newBuilder().build();
+                var r=c.send(HttpRequest.newBuilder(URI.create("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3Data")).GET().build(),HttpResponse.BodyHandlers.ofString());
+                System.out.println(r.body());
+            }
+        }
+
+    - lang: php
+      label: PHP
+      source: |
+        <?php echo file_get_contents("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3Data");
+
+    - lang: rust
+      label: Rust
+      source: |
+        fn main(){
+            let b=reqwest::blocking::get("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3Data").unwrap().text().unwrap();
+            println!("{}",b);
+        }
+
+    - lang: sh
+      label: Shell
+      source: |
+        curl -ks http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3Data
+
+/api/GetPregaoB3ScrapedData:
+  get:
+    - lang: python
+      label: Python
+      source: |
+        import requests,os,urllib3;
+        urllib3.disable_warnings();
+        print(requests.get("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3ScrapedData",verify=False).text)
+
+    - lang: csharp
+      label: C#
+      source: |
+        using System.Net.Http;
+        using System.Threading.Tasks;
+        using System;
+        class Program{
+            static async Task Main(){
+                var c=new HttpClient();
+                var s=await c.GetStringAsync("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3ScrapedData");
+                Console.WriteLine(s);
+            }
+        }
+
+    - lang: javascript
+      label: Node.js
+      source: |
+        import('node-fetch')
+        .then(({default:fetch})=>fetch('http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3ScrapedData')
+        .then(r=>r.text())
+        .then(console.log));
+
+    - lang: go
+      label: Go
+      source: |
+        package main
+        import("fmt";"io";"net/http")
+        func main(){
+            resp,_:=http.Get("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3ScrapedData");
+            defer resp.Body.Close();
+            b,_:=io.ReadAll(resp.Body);
+            fmt.Println(string(b))
+        }
+        
+    - lang: java
+      label: Java
+      source: |
+        import java.net.http.*;
+        import java.net.URI;
+        public class Main{
+            public static void main(String[]a)throws Exception{
+                var c=HttpClient.newBuilder().build();
+                var r=c.send(HttpRequest.newBuilder(URI.create("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3ScrapedData")).GET().build(),HttpResponse.BodyHandlers.ofString());
+                System.out.println(r.body());
+            }
+        }
+
+    - lang: php
+      label: PHP
+      source: |
+        <?php echo file_get_contents("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3ScrapedData");
+
+    - lang: rust
+      label: Rust
+      source: |
+        fn main(){
+            let b=reqwest::blocking::get("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3ScrapedData").unwrap().text().unwrap();
+            println!("{}",b);
+        }
+
+    - lang: sh
+      label: Shell
+      source: |
+        curl -ks http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/GetPregaoB3ScrapedData
+
+/api/ExecutePipeline:
+  post:
+    - lang: python
+      label: Python
+      source: |
+        import requests,os,urllib3;
+        urllib3.disable_warnings();
+        print(requests.get("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/ExecutePipeline",verify=False).text)
+
+    - lang: csharp
+      label: C#
+      source: |
+        using System.Net.Http;
+        using System.Threading.Tasks;
+        using System;
+        class Program{
+            static async Task Main(){
+                var c=new HttpClient();
+                var s=await c.GetStringAsync("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/ExecutePipeline");
+                Console.WriteLine(s);
+            }
+        }
+
+    - lang: javascript
+      label: Node.js
+      source: |
+        import('node-fetch')
+        .then(({default:fetch})=>fetch('http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/ExecutePipeline')
+        .then(r=>r.text())
+        .then(console.log));
+
+    - lang: go
+      label: Go
+      source: |
+        package main
+        import("fmt";"io";"net/http")
+        func main(){
+            resp,_:=http.Get("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/ExecutePipeline");
+            defer resp.Body.Close();
+            b,_:=io.ReadAll(resp.Body);
+            fmt.Println(string(b))
+        }
+        
+    - lang: java
+      label: Java
+      source: |
+        import java.net.http.*;
+        import java.net.URI;
+        public class Main{
+            public static void main(String[]a)throws Exception{
+                var c=HttpClient.newBuilder().build();
+                var r=c.send(HttpRequest.newBuilder(URI.create("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/ExecutePipeline")).GET().build(),HttpResponse.BodyHandlers.ofString());
+                System.out.println(r.body());
+            }
+        }
+
+    - lang: php
+      label: PHP
+      source: |
+        <?php echo file_get_contents("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/ExecutePipeline");
+
+    - lang: rust
+      label: Rust
+      source: |
+        fn main(){
+            let b=reqwest::blocking::get("http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/ExecutePipeline").unwrap().text().unwrap();
+            println!("{}",b);
+        }
+
+    - lang: sh
+      label: Shell
+      source: |
+        curl -ks http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/api/ExecutePipeline

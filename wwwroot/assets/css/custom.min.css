@@ -1,0 +1,13 @@
+
+/*# sourceMappingURL=custom.min.css.map */
+.page-content {
+    padding: 1.5rem calc(1.5rem * .5) 60px calc(1.5rem * .5) !important;
+}
+li.list-group-item.active > a.doc-link {
+    color: #fff;
+}
+
+.markdown-body > hr {
+    opacity: .07 !important;
+    margin: 2rem 0 !important;
+}
