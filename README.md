@@ -33,7 +33,7 @@ O desenvolvimento dessa solução visa atender ao Tech Challenge Fase 02 do curs
 
 A arquitetura geral da solução é apresentada na imagem a seguir. Ela contempla o fluxo de dados desde o scraping no site da B3, passando pelo armazenamento no S3, processamento no Glue e disponibilização no Athena.
 
-![Diagrama da arquitetura]([/assets/images/techchallenge/tech-challenge-2-arquitetura.svg](http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/assets/images/techchallenge/tech-challenge-2-arquitetura.svg))
+![Diagrama da arquitetura]([[/assets/images/techchallenge/tech-challenge-2-arquitetura.svg](http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/assets/images/techchallenge/tech-challenge-2-arquitetura.svg)](http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/assets/images/techchallenge/tech-challenge-2-arquitetura.svg))
 
 #### 5. Solução Desenvolvida
 
@@ -41,7 +41,7 @@ O scrap de dados, formatação dos mesmos em formato parquet e envio para um buc
 
 Foi feito um job ETL no Glue através do modo visual executando diversas transformações, conforme imagem a seguir.
 
-![Job ETL no Glue]([/assets/images/techchallenge/etl-job-glue.jpg](http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/assets/images/techchallenge/etl-job-glue.jpg))
+![Job ETL no Glue]([[/assets/images/techchallenge/etl-job-glue.jpg](http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/assets/images/techchallenge/etl-job-glue.jpg)](http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/assets/images/techchallenge/etl-job-glue.jpg))
 
 Em resumo esse job ETL Glue executa os seguintes passos:
 
@@ -58,7 +58,7 @@ O equivalente código Python dessa configuração que foi **feita de maneira vis
 
 Os dados refinados no job glue são salvos em formato parquet em uma pasta chamada refined, particionado por data e pela abreviação do pregão. Na imagem a seguir, apresento a estrutura dos dados salvos no bucket S3, focando na pasta refined.
 
-![Estrutura de pastas no S3]([/assets/images/techchallenge/estruturas-bucket-s3.jpg](http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/assets/images/techchallenge/estruturas-bucket-s3.jpg))
+![Estrutura de pastas no S3]([[/assets/images/techchallenge/estruturas-bucket-s3.jpg](http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/assets/images/techchallenge/estruturas-bucket-s3.jpg)](http://tech-challenge-rodrigo.sa-east-1.elasticbeanstalk.com/assets/images/techchallenge/estruturas-bucket-s3.jpg))
 
 Os dados são automaticamente catalogados no Glue Catalog e estão disponíveis no Athena, conforme imagem a seguir.
 
